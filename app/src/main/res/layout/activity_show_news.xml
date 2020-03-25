@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/news_show"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16"
+        android:paddingHorizontal="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/news_details_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="习近平会见菲律宾总统杜特尔特 外交部表态"
+                android:textColor="#696969"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/news_details_item_publisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="中国新闻网"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/dummy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10">
+
+                </View>
+
+                <TextView
+                    android:id="@+id/news_details_item_publishtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:text="2019.08.30"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_height="200dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/view_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+                <LinearLayout
+                    android:id="@+id/view_points"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:orientation="horizontal"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/news_details_item_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingTop="10dp"
+                android:text="应国务委员兼外交部长王毅邀请，伊朗伊斯兰共和国外交部长穆罕默德·贾瓦德·扎里夫将于8月25日至27日对中国进行正式访问。
+
+问：外交部今天上午发布了菲律宾总统杜特尔特总统将访华的消息。你能否介绍此访的具体安排？中方对此访有何期待？对当前中菲关系有何评价？
+
+答：应国家主席习近平邀请，菲律宾共和国总统杜特尔特将于8月28日至9月1日访问中国。
+
+杜特尔特总统访华期间，习近平主席将在京同其会谈，两国元首共同出席2019年国际篮联篮球世界杯开幕式；李克强总理将同其会见；王岐山副主席将赴广东陪同其观看2019年国际篮联篮球世界杯赛事。
+
+菲律宾是中国的友好邻邦和共建“一带一路”重要伙伴。杜特尔特总统就职以来，中菲关系持续巩固深化，两国积极对接“一带一路”倡议和“大建特建”规划，务实合作取得丰硕成果。去年11月习近平主席对菲进行国事访问，中菲建立全面战略合作关系。今年4月杜特尔特总统来华出席第二届“一带一路”国际合作高峰论坛，两国领导人就双边关系发展特别是“一带一路”合作达成新的重要共识。"
+                android:textIsSelectable="true"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+
+                android:layout_margin="12dp">
+                <ImageButton
+                    android:id="@+id/share_weibo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/weibo"
+                    android:scaleType="fitCenter"
+                    android:background="@null"/>
+                <ImageButton
+                    android:id="@+id/share_qq"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/qq"
+                    android:scaleType="fitCenter"
+                    android:background="@null"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:hint="写评论..."
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/collect_news"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/favorite" />
+    </LinearLayout>
+</LinearLayout>

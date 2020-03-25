@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:id="@+id/category_layout"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/ll_pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我的频道"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textColor="#161616"/>
+
+            <TextView
+                android:id="@+id/operator"
+                android:text="编辑"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="7dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingRight="7dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/bg_channel_manage"
+                android:textColor="#ff6f6f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+
+        <com.example.news.Drag.DragGrid
+            android:id="@+id/userGridView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:horizontalSpacing="4dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:scrollbars="vertical"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="14.0px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="热门频道"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:textColor="#161616"/>
+
+        <com.example.news.Drag.OtherGridView
+            android:id="@+id/otherGridView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:horizontalSpacing="4dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:scrollbars="vertical"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="14.0px" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp" />
+        <TextView
+            android:id="@+id/tv_zhuan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#bbbbbb"
+            android:text="您已订阅全部频道，现在去转转吧"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/ll_pin"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/finish_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:layout_marginBottom="30dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

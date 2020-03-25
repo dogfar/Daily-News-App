@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#0000FF"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@color/colorWhite"
+            android:src="@drawable/search" />
+
+    </LinearLayout>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:src="@drawable/fabu" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:text="发布"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:textSize="12sp" />-->
+        <!--</LinearLayout>-->
+
+
+    <!--
+        android design library提供的TabLayout控件
+        tabIndicatorColor：菜单下方移动的横线的颜色
+        tabSelectedTextColor ：菜单被选中之后的颜色
+        tabTextColor : 菜单正常的颜色
+        app:tabTextAppearance : 添加样式，这里加了样式主要是为了在文字前面加一个图所用，就是把textAllCaps设置成false
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            style="@style/MyTabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            app:tabIndicatorColor="@color/colorBlue"
+            app:tabSelectedTextColor="@color/colorBlue"
+            app:tabTextAppearance="@style/tablayoutIcon"
+            app:tabTextColor="#000000"></com.google.android.material.tabs.TabLayout>
+
+        <ImageButton
+            android:id="@+id/more_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="#FFFFFF"
+            android:src="@drawable/setting" />
+
+
+    </LinearLayout>
+
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="#696969" />-->
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#696969" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:background="@color/colorWhite">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_subscribe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="30.0dip" >
+
+    <TextView
+        android:id="@+id/text_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:minHeight="30.0dip"
+        android:minWidth="72.0dip"
+        android:background="@drawable/subscribe_item_bg"
+        android:textColor="@color/subscribe_item_text_color_normal"
+        android:textSize="14.0sp" />
+    <!-- android:layout_margin="5dip" -->
+
+    <ImageView
+        android:id="@+id/icon_new"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignRight="@+id/text_item"
+        android:layout_marginRight="-7dp"
+        android:scaleType="center"
+        android:src="@drawable/delete_selected_channel"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="本地列表"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp" />
+
+    <View
+        android:id="@+id/setview"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0"
+        android:background="@color/colorBlack" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listview_read"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

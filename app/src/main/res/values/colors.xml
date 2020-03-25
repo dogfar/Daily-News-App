@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorGray">#D3D3D3</color>
+    <color name="colorBlue">#0000FF</color>
+    <color name="colorBackground">#f1f0f6</color>
+    <color name="colorText">#9b9b9b</color>
+    <color name="colorDefault">#ffffff</color>
+    <color name="colorNight">#5e5e5e</color>
+    <color name="secondary_text_color">@android:color/secondary_text_dark</color>
+
+    <color name="subscribe_item_selected_stroke">#ffcc3131</color>
+    <color name="subscribe_item_text_color_pressed">#ffb9b9b9</color>
+    <color name="default_text">#161616</color>
+    <item name="subscribe_item_text_color_normal" type="color">@color/default_text</item>
+    <color name="subscribe_item_drag_stroke">#ffd2d2d2</color>
+    <color name="subscribe_item_drag_bg">#fff5f5f5</color>
+    <color name="subscribe_item_selected_bg">#ffffffff</color>
+    <color name="subscribe_item_disabled_stroke">#d9d9d9</color>
+    <color name="subscribe_item_disabled_bg">#ffffff</color>
+    <color name="subscribe_item_pressed_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_pressed_bg">#fff9f9f9</color>
+    <color name="subscribe_item_normal_stroke">#d9d9d9</color>
+    <color name="subscribe_item_normal_bg">#ffffff</color>
+</resources>

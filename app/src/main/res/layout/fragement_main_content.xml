@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="120dp"-->
+    <!--    android:background="#FFFFFF"-->
+    <!--    android:descendantFocusability="blocksDescendants"-->
+    <!--    android:orientation="vertical">-->
+
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:background="#696969" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/news_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!--</LinearLayout>-->
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
